@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu1">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chech3"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignLeft="@+id/chech3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="160dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginStart="-8dp"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="1dp" />
+
+    <CheckBox
+        android:id="@+id/chech1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chech4"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginBottom="6dp"
+        android:text="One"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/chech2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/chech3"
+        android:layout_alignEnd="@+id/choice"
+        android:layout_alignRight="@+id/choice"
+        android:layout_marginEnd="-24dp"
+        android:layout_marginRight="-24dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="Two" />
+
+    <CheckBox
+        android:id="@+id/chech3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chech1"
+        android:layout_alignLeft="@+id/chech1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginBottom="203dp"
+        android:text="Three" />
+
+    <CheckBox
+        android:id="@+id/chech4"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/chech3"
+        android:layout_alignEnd="@+id/chech2"
+        android:layout_alignRight="@+id/chech2"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-23dp"
+        android:layout_marginRight="-23dp"
+        android:text="Four" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="47dp"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_toLeftOf="@+id/button5">
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="ON" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="OFF" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="58dp"
+        android:text="Start" />
+
+    <Spinner
+        android:id="@+id/choice"
+        android:layout_width="189dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:contentDescription="Hours"
+        android:spinnerMode="dropdown"
+        android:textAlignment="gravity" />
+
+</RelativeLayout>
